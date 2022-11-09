@@ -1,37 +1,76 @@
-
 <!DOCTYPE HTML>
 <html lang="en-US">
+
 <head>
 	<meta charset="UTF-8">
 	<title>GitHub Workshop</title>
 	<meta name="description" content="A sample website, nothin fancy">
-      <meta http-equiv="author" content="H.S. Bhargav">
-      <meta name="keywords" content="html, css, web, design, sample, practice">
+	<meta http-equiv="author" content="H.S. Bhargav">
+	<meta name="keywords" content="html, css, web, design, sample, practice">
 	<link rel="stylesheet" href="style.css">
 	<script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
+	<style>
+		#animi {
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			position: relative;
+			animation-name: example;
+			animation-duration: 4s;
+			animation-direction: reverse;
+		}
+
+		@keyframes example {
+			0% {
+				background-color: red;
+				left: 0px;
+				top: 0px;
+			}
+
+			50% {
+				background-color: blue;
+				left: 200px;
+				top: 0px;
+			}
+
+			100% {
+				background-color: red;
+				left: 0px;
+				top: 0px;
+			}
+		}
+	</style>
 </head>
+
 <body>
 	<div class="container">
-	<header>
-		<div class="header">
-			<h1>Welcome</h1>
-		</div>
-	</header>
+		<header>
+			<div class="header">
+				<h1>Welcome</h1>
+			</div>
+		</header>
 		<div class="main">
 			<h2>A sample website, nothin fancy add 3 features to this boilerplate</h2>
 		</div>
 		<div class="feature">
 			<h3>Feature 1</h3>
-			<p>lorem ipsum dolor amet lorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum.</p>
-			
+			<p>lorem ipsum dolor amet lorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum
+				dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum.</p>
+
 		</div>
 		<div class="feature">
 			<h3>Feature 2</h3>
-			<p>lorem ipsum dolor amet lorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor.</p>
+			<p>lorem ipsum dolor amet lorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum
+				dolor ametlorem ipsum dolor ametlorem ipsum dolor ametlorem ipsum dolor.</p>
 		</div>
-	<footer>
-		&copy;GitHub Workshop
-	</footer>
+
+		<div id="animi"></div>
+
+
+		<footer>
+			&copy;GitHub Workshop
+		</footer>
 	</div>
 </body>
+
 </html>
